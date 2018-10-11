@@ -261,15 +261,15 @@ configs.height = '300';
 configs.frameborder = '2';
 configs.attributes = 'data-id="video" onLoad="call_function_loaded()" ';
 
-const text = ' hello there @mic, did you join the #omg topic for www.mybiggest.suprise ? oh, and do not miss this: https://www.youtube.com/watch?v=PKzOWZO_HWU';
+const text = ' hello there @mic, did you join the #omg topic for www.mybiggest.surprise ? oh, and do not miss this: https://www.youtube.com/watch?v=PKzOWZO_HWU';
 
 const res = mtools.build.links(text, configs);
 console.log(res);
-//'hello there @mic, did you join the #omg topic for <a href="http://www.mybiggest.suprise">www.mybiggest.suprise</a> ? oh, and do not miss this:<iframe width="400" height="300" src="https://www.youtube.com/embed/PKzOWZO_HWU" frameborder="2" data-id="video" onLoad="call_function_loaded()" </iframe>'
+//'hello there @mic, did you join the #omg topic for <a href="http://www.mybiggest.surprise">www.mybiggest.surprise</a> ? oh, and do not miss this:<iframe width="400" height="300" src="https://www.youtube.com/embed/PKzOWZO_HWU" frameborder="2" data-id="video" onLoad="call_function_loaded()" </iframe>'
 
 const res = mtools.build.links(text);
 console.log(res);
-//'hello there @mic, did you join the #omg topic for <a href="http://www.mybiggest.suprise">www.mybiggest.suprise</a> ? oh, and do not miss this: <a href="https://www.youtube.com/watch?v=PKzOWZO_HWU">https://www.youtube.com/watch?v=PKzOWZO_HWU</a>'
+//'hello there @mic, did you join the #omg topic for <a href="http://www.mybiggest.surprise">www.mybiggest.surprise</a> ? oh, and do not miss this: <a href="https://www.youtube.com/watch?v=PKzOWZO_HWU">https://www.youtube.com/watch?v=PKzOWZO_HWU</a>'
 
 ```
 
@@ -333,7 +333,7 @@ console.log(res);
 
 ## To Do
 * Improve documentation.
-* Support retunging of array by parser.
+* Support retuning of array by parser.
 * Set default of `markup.parse.images()` to parse using both `raw` and `src` modes when no default mode is set.
 * Set default of `markup.parse.links()` to parse using both `raw` and `href` modes when no default mode is set.
 * Setup automated testing.
