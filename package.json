@@ -30,10 +30,9 @@
   "devDependencies": {
     "eslint": "^5.6.1",
     "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   },
-  "dependencies": {
-    "husky": "^1.1.2"
-  }
+  "dependencies": {}
 }
