@@ -5,7 +5,7 @@
 # Markup tools
 Markdown and text manipulation tools.
 
-If you are looking for the earliest text-production versions please see: [Markup Builder](https://www.npmjs.com/package/markup-builder).
+**If you are looking for the earliest versions please see: [Markup Builder](https://www.npmjs.com/package/markup-builder).**
 
 
 ## Installation
