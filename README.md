@@ -25,7 +25,7 @@ const mtools = require('markup-tools');
 Exposed to the global browser window as `mtool`.
 
 ```text
-<script src="https://unpkg.com/markup-tools/dist/markup.min.js"></script>
+<script src="https://unpkg.com/markup-tools/dist/markup-tools.min.js"></script>
 ```
 
 ## Warning
