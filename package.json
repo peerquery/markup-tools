@@ -1,0 +1,38 @@
+{
+  "name": "markup-tools",
+  "version": "2.0.0",
+  "description": "Utility to format markup",
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peerquery/markup-tools.git"
+  },
+  "scripts": {
+    "lintfix": "eslint \"**/*.js\" --fix",
+    "lint": "eslint \"**/*.js\"",
+    "test": "npm run lintfix",
+    "build": "npm run lintfix && webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/peerquery/markup-tools/issues"
+  },
+  "homepage": "https://github.com/peerquery/markup-tools#readme",
+  "keywords": [
+    "image",
+    "url",
+    "node"
+  ],
+  "author": "dzivenu",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {}
+}
