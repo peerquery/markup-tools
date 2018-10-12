@@ -22,7 +22,7 @@ const mtools = require('markup-tools');
 
 ### Browser
 
-```text
+```html
 <script src="https://unpkg.com/markup-tools/dist/markup-tools.min.js"></script>
 ```
 
@@ -41,11 +41,9 @@ console.log(res);
 
 This is a small purely Javascript-based library designed to work in both the browser and in Node.js. With no dependencies, it uses `REGEX` and helper functions to attempt to parse everything, including html string.
 
-## Usage
+## Usage `mtools.parsers`
 
-## `mtools.parsers`
-
-#### Parsing images
+### Parsing images
 Extract image srcs from text;
 
 ```javascript
@@ -73,7 +71,7 @@ const kofi_thumbnail = mtools.parse.images(text);
 
 ```
 
-#### Advanced use
+### Advanced use
 
 ```javascript
 
@@ -111,7 +109,7 @@ console.log(mtools.parse.images(text, 2, null, 'src'));
 ```
 
 
-#### Parsing links
+### Parsing links
 Extract urls from text.
 
 ```javascript
@@ -140,9 +138,9 @@ const links = mtools.parse.links(text, 1, 'href');
 ```
 
 
-### Formatters
+## Formatters `mtools.format`
 
-#### Text
+### Text
 Clean text elements, inline links and inline image links from text.
 
 ```javascript
@@ -163,7 +161,7 @@ const text = mtools.format.text(text, 6);
 
 ```
 
-#### Links
+### Links
 Clean unattached links from text.
 
 ```javascript
@@ -183,7 +181,7 @@ const text = mtools.format.links(text, '_');
 
 ```
 
-#### Images
+### Images
 Clean unattached image links from text
 
 ```javascript
@@ -208,7 +206,8 @@ const text = mtools.format.images(text, null, '_');
 
 ```
 
-## Builders
+## Builders `mtools.build`
+
 Set of small utilities for building markup.
 
 ### Hashtags
@@ -233,6 +232,7 @@ console.log(res);
 ```
 
 ### Mentions
+
 Build hyperlinks of all unattached mentions in a string.
 
 ```javascript
@@ -255,6 +255,7 @@ console.log(res);
 ```
 
 ### Links
+
 Build link tags of all unattached links in a string.
 
 ```javascript
@@ -284,6 +285,7 @@ console.log(res);
 
 
 ### Images
+
 Build image tags of all unattached image links in a string.
 
 ```javascript
@@ -302,6 +304,7 @@ console.log(res);
 ```
 
 ### Template
+
 Build a template using Mustache-style {{ double curly brackets }} variable placeholders.
 
 ```javascript
@@ -339,8 +342,8 @@ console.log(res);
 
 ```
 
-
 ## To Do
+
 * Improve documentation.
 * Support retuning of array by parser.
 * Set default of `markup.parse.images()` to parse using both `raw` and `src` modes when no default mode is set.
