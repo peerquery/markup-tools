@@ -22,15 +22,24 @@ const mtools = require('markup-tools');
 
 ### Browser
 
-Exposed to the global browser window as `mtool`.
-
 ```text
 <script src="https://unpkg.com/markup-tools/dist/markup-tools.min.js"></script>
 ```
 
+Exposed to the global browser window as `mtool`. Call directly in the browser code as `mtools`
+
+```javascript
+
+const text = '<b>hello</b>';
+const res = mtools.format.text(text);
+console.log(res);
+//'hello'
+
+```
+
 ## Warning
 
-This is a small purely Javascript-based library designed to work in both the browser and in Node.js. With no dependencies, it uses `REGEX` and helper functions to attempt to parse everything, including text string.
+This is a small purely Javascript-based library designed to work in both the browser and in Node.js. With no dependencies, it uses `REGEX` and helper functions to attempt to parse everything, including html string.
 
 ## Usage
 
