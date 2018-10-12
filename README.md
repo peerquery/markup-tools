@@ -41,7 +41,7 @@ console.log(res);
 
 This is a small purely Javascript-based library designed to work in both the browser and in Node.js. With no dependencies, it uses `REGEX` and helper functions to attempt to parse everything, including html string.
 
-## Usage `mtools.parsers`
+## Parsers `mtools.parse`
 
 ### Parsing images
 Extract image srcs from text;
