@@ -1,6 +1,6 @@
 {
   "name": "markup-tools",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "Utility to format markup",
   "main": "./lib/index.js",
   "directories": {
