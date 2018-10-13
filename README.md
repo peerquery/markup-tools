@@ -3,10 +3,9 @@
 [![Codebase license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/peerquery/markup-tools/blob/master/LICENSE)
 
 # Markup tools
-Markdown and text manipulation tools.
+Markdown and text manipulation tools. Casts all inputs types to String.
 
 **If you are looking for the earliest versions please see: [Markup Builder](https://www.npmjs.com/package/markup-builder).**
-
 
 ## Installation
 
@@ -41,7 +40,7 @@ console.log(res);
 
 ### REGEX based
 
-This is a very small(4kb minified) purely Javascript-based library designed to work in both the browser and in Node.js. With no dependencies, it uses `REGEX` and helper functions to attempt to parse everything, including html string.
+This is a small purely Javascript-based library designed to work in both the browser and in Node.js. With no dependencies, it uses `REGEX` and helper functions to attempt to parse everything, including html string.
 
 ### NOT a sanitizer
 
@@ -136,7 +135,7 @@ const links = mtools.parse.links(text);
 //defaults to 'raw' when no source is specified
 
 const links = mtools.parse.links(text, 1);
-//'www.link.two'
+//' http://link.two'
 
 const links = mtools.parse.links(text, 1, 'href');
 //'link6'
@@ -225,7 +224,7 @@ mtools.build.hashtag(input_string, scheme);
 
 //Examples
 
-const text = ' hello there @mic, did you join the #omg topic';
+const text = 'hello there @mic, did you join the #omg topic';
 
 const res = mtools.build.hashtags(text, '/hot');
 console.log(res);
@@ -248,11 +247,11 @@ mtools.build.mentions(input_string, scheme);
 
 //Examples
 
-const text = ' hello there @mic, did you join the #omg topic?';
+const text = 'hello there @mic, did you join the #omg topic?';
 
 const res = mtools.build.mentions(text, '/user');
 console.log(res);
-//' hello there <a target="_blank" href="/user/mic">@mic</a>, did you join the #omg topic?';
+//'hello there <a target="_blank" href="/user/mic">@mic</a>, did you join the #omg topic?';
 
 const res = mtools.build.mentions(text);
 console.log(res);
@@ -277,7 +276,7 @@ configs.height = '300';
 configs.frameborder = '2';
 configs.attributes = 'data-id="video" onLoad="call_function_loaded()" ';
 
-const text = ' hello there @mic, did you join the #omg topic for www.mybiggest.surprise ? oh, and do not miss this: https://www.youtube.com/watch?v=PKzOWZO_HWU';
+const text = 'hello there @mic, did you join the #omg topic for www.mybiggest.surprise ? oh, and do not miss this: https://www.youtube.com/watch?v=PKzOWZO_HWU';
 
 const res = mtools.build.links(text, configs);
 console.log(res);
@@ -354,7 +353,6 @@ console.log(res);
 * Support retuning of array by parser.
 * Set default of `markup.parse.images()` to parse using both `raw` and `src` modes when no default mode is set.
 * Set default of `markup.parse.links()` to parse using both `raw` and `href` modes when no default mode is set.
-* Setup automated testing.
 * Document with JSDOC.
 * Support parsing of thumbnails images from Youtube links.
 * Provide playground to try out our REGEXes and helper functions.
