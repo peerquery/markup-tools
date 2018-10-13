@@ -37,9 +37,15 @@ console.log(res);
 
 ```
 
-## Warning
+## Important!?
 
-This is a small purely Javascript-based library designed to work in both the browser and in Node.js. With no dependencies, it uses `REGEX` and helper functions to attempt to parse everything, including html string.
+### REGEX based
+
+This is a very small(4kb minified) purely Javascript-based library designed to work in both the browser and in Node.js. With no dependencies, it uses `REGEX` and helper functions to attempt to parse everything, including html string.
+
+### NOT a sanitizer
+
+Please note that none of the functions in this library does sanitizing of HTML string. If you want to sanitize HTML please use the known HTML sanitizers such as [DOM Purify](https://www.npmjs.com/package/dompurify), [sanitize-html](https://www.npmjs.com/package/sanitize-html) and [XSS](https://www.npmjs.com/package/xss).
 
 ## Parsers `mtools.parse`
 
